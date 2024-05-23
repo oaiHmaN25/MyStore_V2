@@ -52,5 +52,12 @@ namespace MyStore_G5
         {
 
         }
+
+        private void btnManageProduct_Click(object sender, RoutedEventArgs e)
+        {
+            lableWelcome.Visibility = Visibility.Hidden;
+            AdminProduct adminProduct = new AdminProduct();
+            frameMain.Content = adminProduct;
+        }
     }
 }

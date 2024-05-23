@@ -28,7 +28,7 @@
             <StackPanel Margin="0,36,0,0" Grid.RowSpan="2">
                 <Separator Margin="0,5,0,5" Width="Auto" Height="1" Background="LightBlue"/>
                 <StackPanel Orientation="Vertical" Height="96" Width="156">
-                    <Button Content="Manage Product" Margin="5" Background="White" BorderBrush="Gray"/>
+                    <Button x:Name="btnManageProduct" Content="Manage Product" Margin="5" Background="White" BorderBrush="Gray" Click="btnManageProduct_Click"/>
                     <Button Content="Manage Staff" Margin="5" Background="White" BorderBrush="Gray" Click="Staff_Click"/>
                     <Button Content="Report" Margin="5" Background="White" BorderBrush="Gray" Click="Button_Click"/>
                 </StackPanel>
