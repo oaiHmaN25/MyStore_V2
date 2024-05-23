@@ -1,0 +1,54 @@
+﻿<Window x:Class="MyStore_G5.EditOrderDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyStore_G5"
+        mc:Ignorable="d"
+        Title="EditOrderDetail" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Order Detail ID:" Grid.Row="0" Margin="10"/>
+        <TextBox x:Name="orderDetailIdTextBox" Grid.Row="0" Margin="100,0,10,0" IsEnabled="False" Text="{Binding OrderDetailId}"/>
+
+        <Label Content="Order ID:" Grid.Row="1" Margin="10"/>
+        <TextBox x:Name="orderIdTextBox" Grid.Row="1" Margin="100,0,10,0" IsEnabled="False" Text="{Binding OrderId}"/>
+
+        <Label Content="Product ID:" Grid.Row="2" Margin="10"/>
+        <TextBox x:Name="productIdTextBox" Grid.Row="2" Margin="100,0,10,0" IsEnabled="False" Text="{Binding ProductId}"/>
+
+        <Label Content="Product Name:" Grid.Row="3" Margin="10"/>
+        <TextBox x:Name="productNameTextBox" Grid.Row="3" Margin="100,0,10,0" IsEnabled="False" Text="{Binding ProductName}"/>
+
+        <Label Content="Quantity:" Grid.Row="4" Margin="10"/>
+        <TextBox x:Name="quantityTextBox" Grid.Row="4" Margin="100,0,10,0" Text="{Binding Quantity}"/>
+
+        <Label Content="Unit Price:" Grid.Row="5" Margin="10"/>
+        <TextBox x:Name="unitPriceTextBox" Grid.Row="5" Margin="100,0,10,0" Text="{Binding UnitPrice}" IsEnabled="False"/>
+        <!-- Add more fields as needed -->
+
+        <Button Content="Save" Grid.Row="9" Margin="512,40,93,66" Click="SaveButton_Click"/>
+        <Button Content="Cancel" Grid.Row="9" Margin="145,36,456,65" Click="CancelButton_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.059"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+    </Grid>
+</Window>
