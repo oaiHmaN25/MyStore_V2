@@ -68,7 +68,7 @@ namespace MyStore_G5 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MyStore_G5;component/staffmanagement.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MyStore_G5;V1.0.0.0;component/staffmanagement.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\StaffManagement.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -30,7 +30,7 @@
                 <StackPanel Orientation="Vertical" Height="96" Width="156">
                     <Button Content="Manage Product" Margin="5" Background="White" BorderBrush="Gray"/>
                     <Button Content="Manage Staff" Margin="5" Background="White" BorderBrush="Gray" Click="Staff_Click"/>
-                    <Button Content="Manage Order" Margin="5" Background="White" BorderBrush="Gray" Click="Button_Click"/>
+                    <Button Content="Report" Margin="5" Background="White" BorderBrush="Gray" Click="Button_Click"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Grid.Row="2" Margin="0,2,0,0">
